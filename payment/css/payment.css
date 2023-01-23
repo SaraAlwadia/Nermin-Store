@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+:root{
+    --main-color: #ff8496;
+    --second-color: #364c96;
+    --btn-color: #fdc7a3;
+    --bg-color: #eaebed;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+    --padding : 80px
+}
+
+/* Start Global */
+
+h1 {
+    font-size: 3.7vw; /*50px*/
+    line-height: 64px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', 'serif';
+}
+
+h2 {
+    font-size: 3.3vw; /*46px*/
+    line-height: 54px;
+    color: var(--second-color);
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Start Credit Payment Form */
+
+.payment-container {
+    padding: var(--padding) 0;
+}
+
+.payment-main {
+    margin: auto;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 0.2);
+    padding: 30px 40px;
+    border: 1px solid var(--bg-color);
+    /* width: fit-content; */
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.payment-main .card-header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 130px;
+}
+
+.payment-main .card-header img {
+    margin: auto;
+    width: 90px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.payment-main img.active-card,
+.payment-main .card-header img:hover {
+    width: 130px;
+}
+
+.payment-main .payment-form .input-box {
+    margin-top: 20px;
+    
+}
+.payment-main .payment-form .input-box label {
+    display: block;
+    color: var(--gray-color);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.payment-main .payment-form .input-box input,
+.payment-main .payment-form .input-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--bg-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    color: var(--gray-color);
+    outline: none;
+}
+
+.payment-main .payment-form .flex-box {
+    display: flex;
+    gap: 15px;
+}
+
+.payment-main .payment-form .flex-box .input-box {
+    flex:  1 1 150px;
+}
+
+.payment-main .payment-form #credit-submet {
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.payment-main .payment-form #credit-submet:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+#maestro-card-form,
+#master-card-form {
+    display: none;
+}
+
+.active-form {
+    display: block;
+}
+/* End Credit Payment Form */

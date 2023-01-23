@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <!-- Fontawesomw -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- Styling -->
+        <link rel="stylesheet" href="./css/single-product.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+    <body>
+
+            <!-- Start Single Product -->
+            <section class="s-product" id="s-product">
+                <div class="container">
+                    <div class="s-product-img">
+                        <img src="../imgs/s-product-01.webp" alt="" id="main-img">
+                        <div class="small-img-group">
+                            <div class="small-img-col">
+                                <img src="../imgs/s-product-01.webp" class="small-img" alt="">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="../imgs/s-product-03.jpg" class="small-img" alt="">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="../imgs/s-product-04.webp" class="small-img" alt="">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="../imgs/s-product-05.webp" class="small-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-product-details">
+                        <h6><a href="">Home</a> / <a href="">Dress</a></h6>
+                        <h4>Women Dress</h4>
+                        <h3>50 <span>$</span></h3>
+                        <form action="" method="get" id="s-product-form">
+                            <select name="women-drs" id="women-drs">
+                                <option value="select-size">Select Size</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                <option value="small">Small</option>
+                            </select>
+                            <div id="choose-color">
+                                <div class="color-span">
+                                    <span style="background-color: red;"></span>
+                                    <input type="radio" id="red" name="color" value="red">
+                                </div>
+                                <div class="color-span">
+                                    <span style="background-color: blue;"></span>
+                                    <input type="radio" id="blue" name="color" value="blue">
+                                </div>
+                                <div class="color-span">
+                                    <span style="background-color: black;"></span>
+                                    <input type="radio" id="black" name="color" value="black">
+                                </div>
+                                <div class="color-span">
+                                    <span style="background-color: gray;"></span>
+                                    <input type="radio" id="gray" name="color" value="gray">
+                                </div>
+                            </div>
+                            <input type="number" value="1" min="0">
+                            <button id="add-to-cart" type="submit">Add To Cart</button>
+                        </form>
+                        <h4>Product Details</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, est facere nihil sunt dolore laudantium animi, quaerat nam nemo beatae itaque quos culpa, dolorum nostrum! Velit atque placeat vel animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam provident totam magnam quo velit nesciunt nulla. Natus maxime enim quas dignissimos aut in laudantium, consectetur, et nam, accusamus aspernatur praesentium?</span>
+                    </div>
+                </div>
+            </section>
+            <!-- End Single Product -->
+
+            <!-- Start Feature Products -->
+            <section class="products" id="products">
+                <h1 class="section-title">Features Products</h1>
+                <p>Fasion Winter Collection</p>
+                <div class="container">
+                    <div class="products-grid">
+                        <div class="product">
+                            <img src="../imgs/s-product-02.jpeg" alt="">
+                            <div class="description">
+                                <span class="brand">Channel</span>
+                                <h5>Jacket</h5>
+                                <div class="rate-starts">
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                </div>
+                                <span class="price">200$</span>
+                            </div>
+                            <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                        </div>
+                        <div class="product">
+                            <img src="../imgs/s-product-03.jpg" alt="">
+                            <div class="description">
+                                <span class="brand">Channel</span>
+                                <h5>Jacket</h5>
+                                <div class="rate-starts">
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                </div>
+                                <span class="price">200$</span>
+                            </div>
+                            <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                        </div>
+                        <div class="product">
+                            <img src="../imgs/s-product-04.webp" alt="">
+                            <div class="description">
+                                <span class="brand">Channel</span>
+                                <h5>Jacket</h5>
+                                <div class="rate-starts">
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                </div>
+                                <span class="price">200$</span>
+                            </div>
+                            <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                        </div>
+                        <div class="product">
+                            <img src="../imgs/s-product-05.webp" alt="">
+                            <div class="description">
+                                <span class="brand">Channel</span>
+                                <h5>Jacket</h5>
+                                <div class="rate-starts">
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                    <i class="fa-solid fa-star not-rate-star"></i>
+                                </div>
+                                <span class="price">200$</span>
+                            </div>
+                            <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Feature Products -->
+
+    
+            <script src="./js/single-product.js"></script>
+    </body>
+</html>

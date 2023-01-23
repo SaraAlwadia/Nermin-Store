@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+:root{
+    --main-color: #ff8496;
+    --second-color: #364c96;
+    --btn-color: #fdc7a3;
+    --bg-color: #eaebed;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+    --padding : 80px
+}
+
+/* Start Global */
+
+h1 {
+    font-size: 3.7vw; /*50px*/
+    line-height: 64px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', 'serif';
+}
+
+h2 {
+    font-size: 3.3vw; /*46px*/
+    line-height: 54px;
+    color: var(--second-color);
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+}
+
+.rate-starts i {
+    font-size: 12px;
+}
+
+.rate-star {
+    color: rgb(243, 181, 25);
+}
+
+.not-rate-star {
+    color: var(--gray-color);
+}
+
+
+
+/* End Global */
+
+/* Start About Us Header */
+
+.contact-header {
+    padding: var(--padding) 0;
+    background: url('../../imgs/shop-header.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+/* End About Us Header */
+
+
+/* Start Contact Us */
+
+.contact-us .contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    padding: var(--padding) 0;
+}
+
+.contact-us .contact-details .details span,
+.contact-details #contact-from span {
+    font-size: 18px;
+}
+
+.contact-us .contact-details .details h2,
+.contact-details h2 {
+    font-size: 26px;
+    text-transform: capitalize;
+    line-height: 1.4;
+    padding: 20px 0;
+}
+.contact-us .contact-details .details h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+
+.contact-us .contact-details .details li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contact-us .contact-details .details li i {
+    font-size: 16px;
+    padding-right: 22px;
+    color: var(--gray-color);
+}
+
+.contact-us .contact-details .details li p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.contact-us .map iframe {
+    width: 100%;
+    height: 400px;
+}
+/* End Contact Us */
+
+/* Start Contact Details */
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* @media (max-width: 460px) {
+    .contact-details {
+        flex-direction: column;
+    }
+    
+    .contact-details #contact-from {
+        width: 100%;
+    }
+} */
+
+.contact-details #contact-from {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-details #contact-from input,
+.contact-details #contact-from textarea {
+    width: 95%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid var(--bg-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.contact-details #contact-from textarea {
+    height: 150px;
+}
+
+.contact-details #contact-from #submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.contact-details #contact-from #submit-btn:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+/* End Contact Details */
+
+/* Start People */
+
+.contact-details .people {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto;
+}
+
+.contact-details .people div{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-details .people img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.contact-details .people div p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.contact-details .people div p span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+/* End People */
+

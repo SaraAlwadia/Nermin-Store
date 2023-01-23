@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nermine Store | Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+</head>
+<body>
+
+        <!-- Start Header -->
+        <ul class="sub-men">
+          <li><a href="">My Orders</a></li>
+          <li><a href="">My Profile</a></li>
+          <li><a href="">Log Out</a></li>
+      </ul>
+        <!-- Start Header -->
+            <!-- popup -->
+
+      <!-- End popup -->
+        <!-- Start Navbar -->
+        <!-- End Navbar -->
+        <section class="user-page" id="user-page">
+          <Section id="main-header" class="main-header">
+            <div class="container">
+                <div class="source-nav">
+                    <a href="">Home</a>
+                    <span>/</span>
+                    <a href="" class="focus-source">Profile</a>
+                </div>
+            </div>
+        </Section>
+            <section class="profile-box">
+              <div class="container">
+              <div class="row">
+                  <div class="profile-menu col-sm-12 col-md-12 col-lg-3">
+                      <img src="../imgs/avatar-01.png" alt="" class="profile-img" id="display-img" class="image-preview__image">
+                      <h1>Sara Mohammed</h1>
+                      <ul class="menu">
+                          <li class="tab active" data-tab-target="#orders"><i class="fa-solid fa-bag-shopping"></i>Orders</li>
+                          <li class="tab" data-tab-target="#Shipping"><i class="fa-solid fa-truck"></i>Shipping</li>
+                          <li class="tab" data-tab-target="#acount"><i class="fa-solid fa-user"></i>Profile</li>
+                          <li class="tab" data-tab-target="#safety"><i class="fa-solid fa-lock"></i>Securitu</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-9">
+                  <div id="orders" class="orders active" data-tab-content>
+                          <div class="flex-title">
+                              <h2 class="indicator">Orders</h2>
+                              <div class="filter-condition">
+                                  <select name="" id="select">
+                                      <option value="all">Display: All</option>
+                                      <option value="pross">Display: Preparing </option>
+                                      <option value="shipping">Display: Shipping</option>
+                                      <option value="complete">Display: Done</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="product-field">
+                            <ul class="items row">
+                            <li class="col-sm-12" data-category="" data-price="">
+                              <div class="order col-12">
+                                <div class="product-img">
+                                    <img src="../imgs/collection-01.jpg" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+                                    <span>product description</span>
+                                    <div>
+                                    <span>#92903 </span>
+                                    <span>20/6/2002</span>
+                                    </div>
+                                    <span class="price">320$</span>
+                                </div>
+                                <div class="order-status">
+                                    <h6 class="status being-processed">Preparing</h6>
+                                </div>
+                            </div>
+                           </li>
+                           <li class="col-sm-12" data-category="" data-price="">
+                            <div class="order col-12">
+                              <div class="product-img">
+                                  <img src="../imgs/collection-01.jpg" alt="">
+                              </div>
+                              <div class="product-details">
+                                  <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+                                  <span>product description</span>
+                                  <div>
+                                  <span>#92903 </span>
+                                  <span>20/6/2002</span>
+                                  </div>
+                                  <span class="price">320$</span>
+                              </div>
+                              <div class="order-status">
+                                  <h6 class="status being-processed">Preparing</h6>
+                              </div>
+                          </div>
+                         </li>
+                         <li class="col-sm-12" data-category="" data-price="">
+                            <div class="order col-12">
+                              <div class="product-img">
+                                  <img src="../imgs/collection-01.jpg" alt="">
+                              </div>
+                              <div class="product-details">
+                                  <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+                                  <span>product description</span>
+                                  <div>
+                                  <span>#92903 </span>
+                                  <span>20/6/2002</span>
+                                  </div>
+                                  <span class="price">320$</span>
+                              </div>
+                              <div class="order-status">
+                                  <h6 class="status being-processed">Preparing</h6>
+                              </div>
+                          </div>
+                         </li>
+
+                        </ul>
+                        </div>
+                  </div>
+                  <div id="Shipping" class="shipping-stage"  data-tab-content>
+                      <div class="flex-title">
+                          <h2 class="indicator">Shipping</h2>
+                          <div class="filter-condition">
+                              <select name="" id="select">
+                                  <option value="Default">Display: All</option>
+                                  <option value="ShippingStatus">Display: Preparing</option>
+                                  <option value="LowToHigh">Display: Shipping</option>
+                                  <option value="HighToLow">Display: Done</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="product-field">
+                        <ul class="items row">
+                       <li class="col-sm-12" data-category="" data-price="">
+                        <div class="order col-12">
+                          <div class="product-img">
+                              <img src="../imgs/collection-01.jpg" alt="">
+                          </div>
+                          <div class="product-details">
+                              <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                              <span>Description</span>
+                              <div>
+                              <span>#92903</span>
+                              <span>20/6/2002</span>
+                              </div>
+                              <span class="price">320$</span>
+                          </div>
+                          <div class="order-status">
+                            <h6 class="status shipping">Shipping</h6>
+                        </div>
+                      </div>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div id="acount" class="acount"  data-tab-content>
+                      <h2 class="indicator">Profile</h2>
+                      <div class="img-user">
+                          <p>الصورة الشخصية</p>
+                          <form action="" method="">
+                            <div  class="image-preview" id="imagePreview">
+                                <input type="file" name="inpFile" id="inpFile">
+                                <label for="inpFile"><i class="fa-solid fa-camera"></i></label>
+                                <img src="./imgs/userimg.png" alt="" id="close-img">
+                                <img src="./imgs/userimg.png" alt="image preview" class="image-preview__image">
+                                <span class="image-preview__default-text">
+                                </span>
+                            </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="name">Full Name</label>
+                                  <input type="text" class="form-control" id="name" placeholder="Sara Mohammed">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" id="email" placeholder="sara@gmail.com">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <div class="feild">
+                                    <label for="">Country</label>
+                                    <button id="country-select" class="country-select" type="button" value="">Choose Country<i class="fa-solid fa-chevron-down"></i></button>
+                                    <div class="countries" id="countries">
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                        <button class="country">
+                                            <span class="name">USA</span>
+                                            <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                        </button>
+                                    </div>
+                                </div>    
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <div class="feild">
+                                    <label for="">Cty</label>
+                                    <button id="city-select" class="city-select" type="button" value="">Choose City<i class="fa-solid fa-chevron-down"></i></button>
+                                    <div class="cities" id="cities">
+                                        <button class="country city-sa">
+                                            <span class="name">New York</span>
+                                        </button>
+                                        <button class="country city-sa">
+                                            <span class="name">New York</span>
+                                        </button>
+                                        <button class="country city-sa">
+                                            <span class="name">New York</span>
+                                        </button>
+                                        <button class="country city-sa">
+                                            <span class="name">New York</span>
+                                        </button>
+                                        <button class="country city-sa">
+                                            <span class="name">New York</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                    </div>
+                                <div class="form-group col-md-6">
+                                    <div class="feild">
+                                        <label for="phone-input">Phone</label>
+                                        <input id="phone" name="phone-login-input" type="tel" placeholder="Enter Your Phone Number">
+                                    </div>
+                                        </div>
+                              </div>
+                              <button type="submit" class="button">Save</button>
+                          </form>
+                      </div>
+                  </div>
+                  <div id="safety" class="safety"  data-tab-content>
+                      <h2 class="indicator">Security</h2>
+                      <h5>Reset Password</h5>
+                      <form action="" method="">
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="passwordOne">Current Password</label>
+                              <input type="password" class="form-control" id="passwordOne" value="" placeholder="Enter Current Password">
+                              <i class="fa-solid fa-eye" id="toggle1" onclick="show1()"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="password">New Password</label>
+                              <input type="password" class="form-control" id="password" value="" placeholder="Enter New Password">
+                              <i class="fa-solid fa-eye" id="toggle2" onclick="show2()"></i>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="pw-renew">Confirm Password</label>
+                              <input type="password" class="form-control" id="pw-renew" value="" placeholder="Password">
+                              <i class="fa-solid fa-eye" id="toggle3" onclick="show3()"></i>
+                            </div>
+                          </div>
+                          <button type="submit" class="button">Reset Password</button>
+                      </form>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          </section>        
+          </div>
+        </section>
+
+          <!-- Modal -->
+  <div class="modal fade" id="ask_help" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ask for Help</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="ask-help-name">Full Name</label>
+                  <input type="text" class="form-control" id="ask-help-name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                  <label for="ask-help-email">Email</label>
+                  <input type="email" class="form-control" id="ask-help-email" placeholder="Email">
+                </div>
+                <div class="field">
+                    <label for="help-text">المساعدة</label>
+                    <textarea name="help-text" id="help-text" placeholder="How can we help you?"></textarea>
+                </div>
+                <div class="attatch">
+                    <label for="">Attatchment</label>
+                    <br>
+                    <span>Accept JPG, PNG, JPEG, PDF</span>
+                    <div class="upload">
+                        <img src="./imgs/upload-file.png" alt="">
+                        <input type="file" id="ask-help-file" name="ask-help-file">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="send-help-ask" data-dismiss="modal" data-toggle="modal" data-target="#end-help">Send Help</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="end-help" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Help Request</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="animation">
+                <div class="check-box">
+                    <div class="check-box-true">
+                        <div class="success-checkmark">
+                            <div class="check-icon">
+                              <span class="icon-line line-tip"></span>
+                              <span class="icon-line line-long"></span>
+                              <div class="icon-circle"></div>
+                              <div class="icon-fix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <h4 class="message-popup"></h4>
+          <p class="message-popup">We will see your request as soon as posible
+             <br> and response to you soon
+             <br>thank you</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn bg-white" data-dismiss="modal">OK</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="./js/master.js"></script>
+  <script type="text/javascript" src="./js/our-products.js"></script>
+  <script>
+    let tabs = document.querySelectorAll('[data-tab-target]');
+    let tabContents = document.querySelectorAll('[data-tab-content]');
+    let home =document.querySelector('.active-home');
+    tabs.forEach(tab =>{
+        tab.addEventListener('click' , () => {
+            let targets = document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('active');
+            })
+            targets.classList.add('active')
+            
+        })
+    })
+    </script>
+    <script>
+        $(document).on('click' , '.tab' , function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+    <script>
+      const inpFile = document.getElementById('inpFile');
+      const inpPreview = document.getElementById('imagePreview');
+      const previewImage = inpPreview.querySelector('.image-preview__image');
+      const previewDataText = inpPreview.querySelector('.image-preview__default-text');
+      const img = document.getElementById('close-img');
+      const img2 = document.getElementById('display-img');
+      
+  
+      inpFile.addEventListener('change' , function(){
+          const file = this.files[0];
+          if(file){
+              const reader = new FileReader();
+              previewDataText.style.display = "none";
+              img.style.display = "none";
+              previewImage.style.display = "block";
+              img2.style.display='block';
+              reader.addEventListener('load' , function(){
+                  console.log(this)
+                  previewImage.setAttribute('src' , this.result);
+              })
+              reader.readAsDataURL(file);
+          }else{
+                  previewDataText.style.display = none;
+                  previewImage.style.display = none;
+          }
+  
+      })
+  </script>
+        <script>
+          const password3 = document.getElementById('passwordOne');
+          const toggle3 = document.getElementById('toggle1');
+          function show1(){
+              if(password3.type === 'password'){
+                password3.setAttribute('type' , 'text');
+              }else{
+                password3.setAttribute('type' , 'password');
+              }
+          }
+      </script>
+      <script>
+        const password = document.getElementById('password');
+        const toggle = document.getElementById('toggle2');
+        function show2(){
+            if(password.type === 'password'){
+                password.setAttribute('type' , 'text');
+    
+            }else{
+                password.setAttribute('type' , 'password');
+            }
+        }
+    
+    </script>
+        <script>
+            const password2 = document.getElementById('pw-renew');
+            const toggle2 = document.getElementById('toggle3');
+            function show3(){
+                if(password2.type === 'password'){
+                    password2.setAttribute('type' , 'text');
+        
+                }else{
+                    password2.setAttribute('type' , 'password');
+                }
+            }
+        
+        </script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+        <script src="./js/shopping-cart.js"></script>
+        <script src="build/js/intlTelInput.js"></script>
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+                utilsScript: "build/js/utils.js",
+            });
+        </script>
+        <script>
+          let submenitem = document.querySelector('.sub-men-item');
+          let submen = document.querySelector('.sub-men');
+          submenitem.addEventListener('click' , function(){
+            submen.classList.toggle('showMen');
+          })
+        </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <!-- Fontawesomw -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Styling -->
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+        
+        <!-- Start Main Section -->
+        <main class="container payment-container">
+            <section class="payment-main" id="payment-main">
+                <section class="card-header">
+                    <img src="../imgs/visa-card.webp" class="active-card" id="visa-img" alt="">
+                    <img src="../imgs/Master-Card-Blue-icon.png" id="master-img" alt="">
+                    <img src="../imgs/Maestro-icon.png" id="maestro-img" alt="">
+                </section>
+                <section class="payment-forms">
+                    <form action="" id="credit-card-form" class="payment-form active-form">
+                        <div class="credit">
+                            <div class="input-box">
+                                <label for="card-holder-input">Card Number visa</label>
+                                <input type="text" id="card-holder-input">
+                            </div>
+                            <div class="flex-box">
+                                <div class="input-box">
+                                    <label for="expire-m-list">MM</label>
+                                    <select name="expire-m-list" id="expire-m-list">
+                                        <option value="" selected disabled>Month</option>
+                                        <option value="01">01</option>
+                                        <option value="01">02</option>
+                                        <option value="01">03</option>
+                                        <option value="01">04</option>
+                                        <option value="01">05</option>
+                                        <option value="01">06</option>
+                                        <option value="01">07</option>
+                                        <option value="01">08</option>
+                                        <option value="01">09</option>
+                                        <option value="01">10</option>
+                                        <option value="01">11</option>
+                                        <option value="01">12</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label for="expire-y-list">YY</label>
+                                    <select name="expire-y-list" id="expire-y-list">
+                                        <option value="year" selected disabled>Year</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="cvv-input">CVV</label>
+                                <input type="text" id="cvv-input" maxlength="4">
+                            </div>
+                        </div>
+                        <button type="submit" id="credit-submet">Submit</button>
+                    </form>
+                    <form action="" id="master-card-form" class="payment-form">
+                        <div class="credit">
+                            <div class="input-box">
+                                <label for="card-holder-input">Card Number master</label>
+                                <input type="text" id="card-holder-input">
+                            </div>
+                            <div class="flex-box">
+                                <div class="input-box">
+                                    <label for="expire-m-list">MM</label>
+                                    <select name="expire-m-list" id="expire-m-list">
+                                        <option value="" selected disabled>Month</option>
+                                        <option value="01">01</option>
+                                        <option value="01">02</option>
+                                        <option value="01">03</option>
+                                        <option value="01">04</option>
+                                        <option value="01">05</option>
+                                        <option value="01">06</option>
+                                        <option value="01">07</option>
+                                        <option value="01">08</option>
+                                        <option value="01">09</option>
+                                        <option value="01">10</option>
+                                        <option value="01">11</option>
+                                        <option value="01">12</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label for="expire-y-list">YY</label>
+                                    <select name="expire-y-list" id="expire-y-list">
+                                        <option value="year" selected disabled>Year</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="cvv-input">CVV</label>
+                                <input type="text" id="cvv-input" maxlength="4">
+                            </div>
+                        </div>
+                        <button type="submit" id="credit-submet">Submit</button>
+                    </form>
+                    <form action="" id="maestro-card-form" class="payment-form">
+                        <div class="credit">
+                            <div class="input-box">
+                                <label for="card-holder-input">Card Number maestro</label>
+                                <input type="text" id="card-holder-input">
+                            </div>
+                            <div class="flex-box">
+                                <div class="input-box">
+                                    <label for="expire-m-list">MM</label>
+                                    <select name="expire-m-list" id="expire-m-list">
+                                        <option value="" selected disabled>Month</option>
+                                        <option value="01">01</option>
+                                        <option value="01">02</option>
+                                        <option value="01">03</option>
+                                        <option value="01">04</option>
+                                        <option value="01">05</option>
+                                        <option value="01">06</option>
+                                        <option value="01">07</option>
+                                        <option value="01">08</option>
+                                        <option value="01">09</option>
+                                        <option value="01">10</option>
+                                        <option value="01">11</option>
+                                        <option value="01">12</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label for="expire-y-list">YY</label>
+                                    <select name="expire-y-list" id="expire-y-list">
+                                        <option value="year" selected disabled>Year</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label for="cvv-input">CVV</label>
+                                <input type="text" id="cvv-input" maxlength="4">
+                            </div>
+                        </div>
+                        <button type="submit" id="credit-submet">Submit</button>
+                    </form>
+                </section>
+            </section>
+        </main>
+        <!-- End Main Section -->
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./js/payment.js"></script>
+</body>
+</html>

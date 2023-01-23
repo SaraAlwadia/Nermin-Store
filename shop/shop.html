@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <!-- Fontawesomw -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Styling -->
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+        <!-- Start Hero -->
+        <section class="shop-header" id="shop-header">
+            <div class="container">
+                <h2>Fashion World</h2>
+                <p>Save more with coupons & up to 70% off!</p>
+            </div>
+        </section>
+        <!-- End Hero -->
+        
+        <!-- Start Main Section -->
+        <main class="shop-main" id="shop-main">
+            <!-- <button id="filter-setting">Filter</button> -->
+            <!-- Start Filter -->
+            <form action="" id="shop-filter" method="get">
+                <div class="shop-categories filter-category" id="shop-categories">
+                    <h3>Categories</h3>
+                    <label for="t-shirt" class="check-box">T-shirt
+                        <input type="checkbox" id="t-shirt">
+                        <span class="check-mark"></span>
+                    </label>
+                    <label for="hoddies" class="check-box">Hoddies
+                        <input type="checkbox" id="hoddies">
+                        <span class="check-mark"></span>
+                    </label>
+                </div>
+                <div class="shop-size filter-category" id="shop-size">
+                    <h3>Size</h3>
+                    <label for="small" class="check-box">small
+                            <input type="checkbox" id="small">
+                            <span class="check-mark"></span>
+                    </label>
+                    <label for="medium" class="check-box">medium
+                            <input type="checkbox" id="medium">
+                            <span class="check-mark"></span>
+                        </label>
+                    <label for="large" class="check-box">large
+                            <input type="checkbox" id="large">
+                            <span class="check-mark"></span>
+                        </label>
+                    <label for="x-large" class="check-box">x-large
+                            <input type="checkbox" id="x-large">
+                            <span class="check-mark"></span>
+                        </label>
+                    <label for="xx-large" class="check-box">xx-large
+                            <input type="checkbox" id="xx-large">
+                            <span class="check-mark"></span>
+                        </label>
+                    <label for="xxx-large" class="check-box">xxx-large
+                            <input type="checkbox" id="xxx-large">
+                            <span class="check-mark"></span>
+                        </label>
+                </div>
+                <div class="shop-budget filter-category" id="shop-price">
+                    <h3>Prise</h3>
+                    <label for="budget50" class="check-box">50 - 99<span>$</span>
+                        <input type="checkbox" id="budget50">
+                        <span class="check-mark"></span>
+                    </label>
+                    <label for="budget100" class="check-box">100 - 199 <span>$</span>
+                        <input type="checkbox" id="budget100">
+                        <span class="check-mark"></span>
+                    </label>
+                    <label for="budget200" class="check-box">200 - 299 <span>$</span>
+                        <input type="checkbox" id="budget200">
+                        <span class="check-mark"></span>
+                    </label>
+                    <label for="budget300" class="check-box">300 - 399 <span>$</span>
+                        <input type="checkbox" id="budget300">
+                        <span class="check-mark"></span>
+                    </label>
+                </div>
+                <div class="color filter-category">
+                    <h3>color</h3>
+                    <div class="color-filter">
+                        <label for="red" class="check-box">
+                            <input type="checkbox" id="red">
+                            <span class="check-mark" style="background-color: red;"></span>
+                        </label>
+                        <label for="green" class="check-box">
+                            <input type="checkbox" id="green">
+                            <span class="check-mark" style="background-color: green;"></span>
+                        </label>
+                        <label for="blue" class="check-box">
+                            <input type="checkbox" id="blue">
+                            <span class="check-mark" style="background-color: blue;"></span>
+                        </label>
+                        <label for="yellow" class="check-box">
+                            <input type="checkbox" id="yellow">
+                            <span class="check-mark" style="background-color: yellow;"></span>
+                        </label>
+                        <label for="purple" class="check-box">
+                            <input type="checkbox" id="purple">
+                            <span class="check-mark" style="background-color: purple;"></span>
+                        </label>
+                        <label for="pink" class="check-box">
+                            <input type="checkbox" id="pink">
+                            <span class="check-mark" style="background-color: pink;"></span>
+                        </label>
+                        <label for="black" class="check-box"">
+                            <input type="checkbox" id="black">
+                            <span class="check-mark" style="background-color: black;"></span>
+                        </label>
+                        <label for="white" class="check-box">
+                            <input type="checkbox" id="white">
+                            <span class="check-mark" style="background-color: white;"></span>
+                        </label>
+                        <label for="gray" class="check-box">
+                            <input type="checkbox" id="gray">
+                            <span class="check-mark" style="background-color: gray;"></span>
+                        </label>
+                        <label for="orange" class="check-box">
+                            <input type="checkbox" id="orange">
+                            <span class="check-mark" style="background-color: orange;"></span>
+                        </label>
+                        <label for="beige" class="check-box">
+                            <input type="checkbox" id="beige">
+                            <span class="check-mark" style="background-color: rgb(255, 255, 177);"></span>
+                        </label>
+                        <label for="colorized" class="check-box">
+                            <input type="checkbox" id="colorized">
+                            <span class="check-mark" style="background: linear-gradient(20deg, red, orange, pink, blue ) ;"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="design filter-category">
+                    <h3>design</h3>
+                    <label for="classic" class="check-box">classic
+                        <input type="checkbox" id="classic">
+                        <span class="check-mark"></span>
+                    </label>
+                    <label for="kajwal" class="check-box">kajwal
+                        <input type="checkbox" id="kajwal">
+                        <span class="check-mark"></span>
+                    </label>
+                    
+                </div>
+            </form>
+            <!-- End Filter -->
+
+            <!-- Start Products -->
+            <section class="shop-products" id="products-shop">
+                <div class="products">
+                    
+                    <div class="track" id="track">
+                        <a href="" class="ref">Women</a>
+                        &gt;
+                        <a href="" class="ref">Jackets</a>
+                    </div>
+                    <div class="container">
+                        <div class="products-grid" id="paginated-list" data-current-page="1" aria-live="polite">
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200000$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                            <div class="product">
+                                <img src="../imgs/product-01.jpg" alt="">
+                                <div class="description">
+                                    <span class="brand">Channel</span>
+                                    <h5>Jacket</h5>
+                                    <div class="rate-starts">
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                        <i class="fa-solid fa-star not-rate-star"></i>
+                                    </div>
+                                    <span class="price">200$</span>
+                                </div>
+                                <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="pagination-container" id="pagination">
+                    <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                
+                    <div id="pagination-numbers">
+                
+                    </div>
+                
+                    <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </nav>
+            </section>
+            <!-- End Products -->
+        </main>
+        <!-- End Main Section -->
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./js/shop.js"></script>
+</body>
+</html>

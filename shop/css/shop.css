@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+:root{
+    --main-color: #ff8496;
+    --second-color: #364c96;
+    --btn-color: #fdc7a3;
+    --bg-color: #eaebed;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+    --padding : 80px
+}
+
+/* Start Global */
+
+h1 {
+    font-size: 3.7vw; /*50px*/
+    line-height: 64px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', 'serif';
+}
+
+h2 {
+    font-size: 3.3vw; /*46px*/
+    line-height: 54px;
+    color: var(--second-color);
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+}
+
+.rate-starts i {
+    font-size: 12px;
+}
+
+.rate-star {
+    color: rgb(243, 181, 25);
+}
+
+.not-rate-star {
+    color: var(--gray-color);
+}
+
+/* End Global */
+
+/* Start Shop Header Section */
+
+.shop-header {
+    padding: var(--padding) 0;
+    background-color: var(--bg-color);
+    background-image: url('../../imgs/shop-header.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.shop-header p {
+    font-size: 20px;
+    color: var(--white-color);
+    line-height: 1.6;
+}
+
+/* End Shop Header Section */
+
+
+/* Start Shop Main Section */
+
+.shop-main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 50px;
+    /* position: relative; */
+}
+
+/* .shop-main #filter-setting {
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    padding: 4px 10px;
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.active-filter-btn,
+.shop-main #filter-setting:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+} */
+
+#shop-filter {
+    width: 250px;
+    padding: 20px 40px;
+    /* background-color: var(--second-color); */
+    box-shadow: 0 5px 20px var(--bg-color);
+}
+
+@media (max-width: 550px) {
+    .shop-main {
+        display: flex;
+        flex-direction: column;
+    }
+    #shop-filter {
+        height: 250px;
+        width: 100%;
+        overflow-x: auto;
+    }
+    #shop-filter .filter-category {
+        width: 250px;
+        margin: 0 20px;
+    }
+    .shop-main #track {
+        padding-left: 30px;
+    }
+    .shop-main .products {
+        padding: 30px 10px;
+    }
+}
+
+.shop-main #shop-filter h3 {
+    text-transform: capitalize;
+    margin-top: 16px;
+    line-height: 1.7;
+}
+
+.shop-main #shop-filter label {
+    display: block;
+    text-transform: capitalize;
+    cursor: pointer;
+    line-height: 1.7;
+}
+
+.shop-main #shop-filter input {
+    margin-right: 5px;
+}
+
+.shop-main #shop-filter input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.shop-main #shop-filter .check-mark {
+    position: absolute;
+    top: 3px;
+    left: -25px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--gray-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.check-box:hover input[type='checkbox']~.check-mark {
+    background-color: var(--bg-color);
+}
+
+.check-box input:checked~.check-mark {
+    background: var(--main-color);
+    border: none;
+}
+
+.check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.shop-main #shop-filter input[type='checkbox']:checked~.check-mark:after {
+    display: block;
+}
+
+.check-box .check-mark:after {
+    left: 7.3px;
+    top: 2px;
+    width: 3px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    margin: 2px auto;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.shop-main #shop-filter .check-box {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--gray-color);
+    margin: 0 0 1rem 1.7rem;
+    cursor: pointer;
+}
+
+.shop-main #shop-filter .color-filter {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    gap: 10px;
+}
+
+.shop-main #shop-filter .color input[type="checkbox"] {
+    margin: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.shop-main #shop-filter .color span {
+    position: absolute;
+    /* z-index: -1; */
+
+}
+
+.shop-main .shop-products {
+    padding-bottom: 40px;
+}
+
+.shop-main .products {
+    padding: 40px 0;
+}
+
+.shop-main #track,
+.shop-main #track a {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--second-color);
+}
+
+.shop-main .products .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 40px auto;
+}
+
+.shop-main .products .products-grid .product {
+    border: 1px solid var(--gray-color);
+    width: 200px;
+    margin: auto;
+    box-shadow: 0 0 15px rgb(0 0 0 / 0.2);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    position: relative;
+}
+
+.shop-main .products .products-grid .product:hover {
+    box-shadow: 0 0 15px rgb(0 0 0 / 0.4);
+}
+
+.shop-main .products .products-grid .product img{
+    width: 100%;
+    height: 230px;
+}
+
+.shop-main .products .products-grid .product .description {
+    padding: 10px;
+}
+
+.shop-main .products .products-grid .product .brand {
+    color: var(--gray-color);
+}
+
+.shop-main .products .products-grid .product .description h5 {
+    padding-top: 12px;
+    font-size: 20px;
+}
+
+.shop-main .products .products-grid span.price {
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.shop-main .products .products-grid .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--bg-color);
+    font-weight: bold;
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.shop-main .products .products-grid .product:hover .cart,
+.shop-main .products .products-grid .cart:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: var(--white-color);
+}
+
+#pagination {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#pagination button {
+    background-color: var(--white-color);
+    padding: 15px;
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 1px solid var(--main-color);
+    outline: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+#pagination i {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.disabled {
+    background-color: #777;
+}
+
+.disabled:hover {
+    background-color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+#pagination button.active, 
+#pagination button:hover,
+#pagination button:not(.disabled):hover {
+    box-shadow: 0 0 20px var(--main-color);
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+
+/* .active-filter {
+    display: flex;
+} */
+
+
+/* End Shop Main Section */
+
